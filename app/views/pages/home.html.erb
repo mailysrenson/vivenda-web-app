@@ -1,2 +1,117 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap, font awesome & CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Vivenda a nossa coroa</title>
+</head>
+<body>
+  <!-- Logo -->
+  <div class="logo-bar container">
+    <%= image_tag "logo.jpeg", class:"avatar-sm", alt:"Logo" %>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container nav-menu my-3">
+    <nav class="nav">
+      <a class="menu-link px-2" href="index.html">Page d'accueil</a>
+      <a class="menu-link px-2" href="casas.html">Casas</a>
+      <a class="menu-link px-2" href="#">Réserver</a>
+      <a class="menu-link px-2" href="#">Qui sommes-nous?</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="container" style="background-image: url(<%= image_path "header.jpg" %>); object-fit: cover;">
+    <div class="header-text">
+      <h2>BEM-VINDO</h2>
+      <p class="no-bottom-m">Locations de vacances avec piscine</p>
+      <p>En plein centre du Portugal</p>
+      <a href="reserver.html" class="btn btn-success">Réservez ici</a>
+    </div>
+  </header>
+
+  <!-- Cards info (domain, swimming pool, location)-->
+  <div class="card-container container my-3">
+    <div class="row justify-content-md-center casa-card">
+      <div class="card-content col-12 my-3 py-3">
+        <div class="row">
+          <div class="card-text col-8 col-md-6">
+            <h4>Votre havre de paix</h3>
+            <p>
+              Séjournez dans des <strong>bungalows spacieux et tout équipés</strong>,
+              pour max 4-5 personnes, situés dans un domaine paisible d'un hectare d'arbres et de fleurs.
+              <br><br>
+              Tout en tranquillité, dans une petite structure composée de 3 bungalows de vacances, 
+              loin du tourisme de masse.
+              <br><br>
+              Profitez des parties communes comprenant notamment une agréable piscine, un petit bar cosy,…
+            </p>
+         </div>
+         <div class="div-img col-4 col-md-6">
+          <%= image_tag "piscine.jpg", class:"card-img", alt:"domaine vivenda"%>
+         </div>
+        </div>
+      </div>
+
+      <div class="card-content col-12 my-3 py-3">
+        <div class="row">
+          <div class="div-img col-4 col-md-6">
+            <%= image_tag "coja_vivenda.jpg", class:"card-img", alt:"domaine vivenda"%>
+           </div>
+          <div class="card-text col-8 col-md-6">
+            <h4>Loin du tourisme de masse</h3>
+            <p>Notre Vivenda se situe à seulement 2km du <strong>charmant petit village de coja</strong>
+            , situé sur le fleuve Alva. 
+            <br><br>
+            Vous y trouverez tout ce dont vous avez besoin: des petits commerces, des bars,
+            des restaurants, une petite place agréable, un petit marché local bi-mensuel,
+            un centre médical, des fête et du folklore,... 
+            <br><br>
+            La ville la plus proche (Arganil), se situe à 8km. Vous y trouverez des supermarchés
+            tels que Lild et Intermarché.
+            </p>
+         </div>
+        </div>
+      </div>
+
+        <div class="card-content col-12 my-3 py-3">
+          <div class="row">
+            <div class="card-text col-8 col-md-6">
+              <h4>Tombez sous le charme du Portugal</h3>
+              <p>Boire un café dans un petit village typique, sentir la bonne odeur des eucalyptus, 
+                se balader dans la magnifique réserve naturelle de la <em>Serra da Estrela</em>, 
+                goûter à la gastronomie portugaise, se rafraîchir sur une plage fluviale,…
+              <br><br>
+              <strong>Il y en a pour tous les goûts et pour tous les âges!</strong>
+              </p>
+           </div>
+
+           <div class="div-img col-4 col-md-6">
+            <%= image_tag "part_3_vivenda", class:"card-img", alt:"domaine vivenda"%>
+           </div>
+          </div>
+        </div>
+</div>
+
+<!-- footer -->
+<footer class="container">
+  <a href="#" class="contact">Contactez-nous</a>
+
+  <div class="footer-social-media">
+    <h4>Suivez-nous:</h4>
+    <ul class="social-list">
+      <li class="social-icon"><a href="https://www.facebook.com/anossacoroa/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li class="social-icon"><a href="https://www.instagram.com/vivendaanossacoroa/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+ 
+</footer>
+
+
+</body>
+</html>
